@@ -1,0 +1,96 @@
+body {
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+li{
+  margin: 5px 0;
+}
+.container { 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: proxima-nova;
+  flex-direction: row;
+  background: white;
+  color: black;
+  font-family: sans-serif; 
+  height: 130px;
+  width: 100%;
+}
+.navbar { 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: proxima-nova;
+  flex-direction: row;
+  background: lightblue;
+  color: black;
+  font-family: sans-serif; 
+  height: 50px;
+  width: 100%;
+}
+.header-text {
+  padding-bottom: 10px; 
+  padding-left: 10px;
+}
+.footer {
+  padding: 5px; 
+  font-size: 11px;
+  display: flex;
+  justify-content: flex-start;
+}
+img { width: 130px; height: 130px; border-radius: 65px; float: left;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, .5fr);
+  gap: 5px;
+  grid-auto-rows: minmax(50px, auto);
+  background-color: black;
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: proxima-nova;
+  flex-direction: row;
+  background: lightblue;
+  color: black;
+  font-family: sans-serif; 
+  height: 50px;
+  padding: 10px;
+}
+.two {
+  grid-column: 2 / 9;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: proxima-nova;
+  flex-direction: row;
+  background: lightblue;
+  color: black;
+  font-family: sans-serif; 
+  height: 50px;
+  padding: 10px;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2 / 18;
+  background-color: lightblue;
+  min-width: 400px;
+}
+.four {
+  grid-column: 2 / 9;
+  grid-row: 2 / 18;
+  background-color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.five {
+  grid-column: 1 / 9;
+  grid-row: 18;
+  background-color: white;
+  height: fit-content;
+}
