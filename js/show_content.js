@@ -10,8 +10,8 @@ function setButtonActive(button_id) {
 }
 function about_mit_xpro_course() {
 	var nav = document.getElementById("navbar");
-	nav.innerHTML = "<p><a href='index.html'>Home</a>&nbsp;&nbsp;"
-	+">&nbsp;&nbsp;<a id='courselink' href='javascript:about_mit_xpro_course();'>About MIT-xPRO Course</a></p>";
+	nav.innerHTML = "<a href='index.html'>Home</a>&nbsp;&nbsp;"
+	+">&nbsp;&nbsp;<a id='courselink' href='javascript:about_mit_xpro_course();'>About MIT-xPRO Course</a>";
 
 	var div = document.getElementById("content");
 	div.innerHTML = "<h2>MIT | xPro Course Information</h2><br/>"
@@ -27,9 +27,9 @@ function about_mit_xpro_course() {
 
 function show_week_07() {
 	var nav = document.getElementById("navbar");
-	nav.innerHTML = "<p><a href='index.html'>Home</a>&nbsp;&nbsp;"
+	nav.innerHTML = "<a href='index.html'>Home</a>&nbsp;&nbsp;"
 	+">&nbsp;&nbsp;<a id='courselink' href='javascript:about_mit_xpro_course();'>About MIT-xPRO Course</a>&nbsp;&nbsp;"
-	+">&nbsp;&nbsp;<a id='week07link' href='javascript:show_week_07();'>Week 07: PacMen Exercise</a></p>";
+	+">&nbsp;&nbsp;<a id='week07link' href='javascript:show_week_07();'>Week 07: PacMen Exercise</a>";
 	
 	var div = document.getElementById("content");
 	div.innerHTML = "<h2>MIT-xPro Course Week 07 Exercise</h2><br/>"
@@ -57,9 +57,9 @@ function show_week_07() {
 
 function show_week_08() {
 	var nav = document.getElementById("navbar");
-	nav.innerHTML = "<p><a href='index.html'>Home</a>&nbsp;&nbsp;"
+	nav.innerHTML = "<a href='index.html'>Home</a>&nbsp;&nbsp;"
 	+">&nbsp;&nbsp;<a id='courselink' href='javascript:about_mit_xpro_course();'>About MIT-xPRO Course</a>&nbsp;&nbsp;"
-	+">&nbsp;&nbsp;<a id='week08link' href='javascript:show_week_08();'>Week 08: Eye Exercise</a></p>";
+	+">&nbsp;&nbsp;<a id='week08link' href='javascript:show_week_08();'>Week 08: Eye Exercise</a>";
 	
 	var div = document.getElementById("content");
 	div.innerHTML = "<h2>MIT-xPro Course Week 08 Exercise</h2><br/>"
@@ -86,9 +86,9 @@ function show_week_08() {
 
 function show_week_09() {
 	var nav = document.getElementById("navbar");
-	nav.innerHTML = "<p><a href='index.html'>Home</a>&nbsp;&nbsp;"
+	nav.innerHTML = "<a href='index.html'>Home</a>&nbsp;&nbsp;"
 	+">&nbsp;&nbsp;<a id='courselink' href='javascript:about_mit_xpro_course();'>About MIT-xPRO Course</a>&nbsp;&nbsp;"
-	+">&nbsp;&nbsp;<a id='week09link' href='javascript:show_week_09();'>Week 09: Real Time Bus Tracker Exercise</a></p>";
+	+">&nbsp;&nbsp;<a id='week09link' href='javascript:show_week_09();'>Week 09: Real Time Bus Tracker Exercise</a>";
 	
 	var div = document.getElementById("content");
 	div.innerHTML = "<h2>MIT-xPro Course Week 09 Exercise</h2><br/>"
@@ -112,11 +112,11 @@ function show_week_09() {
 }
 function repositories() {
 	var nav = document.getElementById("navbar");
-	nav.innerHTML = "<p><a href='index.html'>Home</a>&nbsp;&nbsp;"
-	+">&nbsp;&nbsp;<a id='repositorieslink' href='javascript:repositories();'>GitHub Repositories</a></p>";
+	nav.innerHTML = "<a href='index.html'>Home</a>&nbsp;&nbsp;"
+	+">&nbsp;&nbsp;<a id='repositorieslink' href='javascript:repositories();'>GitHub Repositories</a>";
 
 	var div = document.getElementById("content");
-	div.innerHTML = "<h2>https://deanqtran.github.io Repositories</h2><br/>"
+	div.innerHTML = "<h2><a href='https://github.com/deanqtran' target='_blank'>https://github.com/deanqtran</a>&nbsp;Repositories</h2><br/>"
 	+ "<ul><li><p>Name: <a href='https://github.com/deanqtran/EyePairMovement.git' target='_blank'>EyePairMovement</a><br/><br/>"
 	+"https://github.com/deanqtran/EyePairMovement.git</p></li>"
 	+ "<li><p>Name: <a href='https://github.com/deanqtran/EyePairMovement.git' target='_blank'>EyePairMovement</a><br/><br/>"
