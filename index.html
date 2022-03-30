@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" href="./fonts/proxima-nova-web-fonts-master/fonts/fonts.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./js/show_content.js"></script>
     <title>Dean Q. Tran's Portfolio</title>
 </head>
@@ -19,24 +25,29 @@
         </div>
         <div class="three">
             <ul style="list-style-type:none; margin-left: -20px; ">
-                <li><button style="font-size: 1.2em" onclick="parent.location='index.html'">
+                <li><button id="home" class="btn btn-primary active" style="font-size: 1.2em" onclick="parent.location='index.html'">
                     Home</button></li>
-                <li><button style="font-size: 1.2em" onclick="about_mit_xpro_course()">
+                <li><button id="course" class="btn btn-primary" style="font-size: 1.2em" onclick="about_mit_xpro_course()">
                     MIT-xPro Course Information</button></li>
                     <ul>
-                        <li><button style="font-size: 1em" onclick="show_week_07()">
+                        <li><button id="week07" class="btn btn-primary" style="font-size: 1em" onclick="show_week_07()">
                             Week 07: PacMen Exercise</button></li>
-                        <li><button style="font-size: 1em" onclick="show_week_08()">
+                        <li><button id="week08" class="btn btn-primary" style="font-size: 1em" onclick="show_week_08()">
                             Week 08: Eye Exercise</button></li>
-                        <li><button style="font-size: 1em" onclick="show_week_09()">
+                        <li><button id="week09" class="btn btn-primary" style="font-size: 1em" onclick="show_week_09()">
                             Week 09: Real Time Bus Tracker Exercise</button></li>
                     </ul>
+                <li><button id="repositories" class="btn btn-primary" style="font-size: 1.2em" onclick="repositories()">
+                        GitHub Repositories</button></li>
             </ul>
         </div>
 
         <div class="four">
             <div id="content">
                 <h2>About me:</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZTW1hfj5Bf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><a href="https://www.youtube.com/watch?v=ZTW1hfj5Bf4" target="_blank">click here to watch on new tab browser window</a></p>
+                <p2>Or go to website:</p2><pre>https://www.youtube.com/watch?v=ZTW1hfj5Bf4</pre>
                 <br/>
                 <h3>Profession</h3>
                 <p>I graduated from Texas A&amp;M University, College Station, TX with BSEE degree in 1993.  Over years of my career, I had learned various software, database, and network skills.</p><br/>
@@ -44,7 +55,12 @@
                 <p>Taking a MIT | xPRO Course: <a href='https://xpro.mit.edu/programs/program-v1:xPRO+PCCx+R1/' target='_blank'>Professional Certificate in Coding: Full Stack Development with MERN</a></p>
                 <p>Course: December 2021</p><br/>
                 <h3>Hobbies</h3>
-                <p>Believe or not one of my hobbies is to learn new software skill.  I love to fix my old cars, house appliances.</p>
+                <ul>
+                    <li>Believe or not one of my hobbies is to learn new software skills</li>
+                    <li>Maintain and repair automobiles, house appliances</li>
+                    <li>Build decks, patios</li>
+                    <li>Listen YouTube music</li>
+                </ul>
             </div>
         </div>
         <div class="five"><p class="footer">Updated: 2022-MAR-23</p></div>

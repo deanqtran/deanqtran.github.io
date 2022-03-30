@@ -1,3 +1,13 @@
+var button_ids = ['home',  'course', 'week07', 'week08', 'week09', 'repositories'];
+console.log(button_ids.length);
+console.log(button_ids);
+
+function setButtonActive(button_id) {
+	for(let i=0; i<button_ids.length; i++) {
+		document.getElementById(button_ids[i]).classList.remove("active");
+	}
+	document.getElementById(button_id).classList.add("active");
+}
 function about_mit_xpro_course() {
 	var nav = document.getElementById("navbar");
 	nav.innerHTML = "<p><a href='index.html'>Home</a>&nbsp;&nbsp;"
@@ -11,6 +21,8 @@ function about_mit_xpro_course() {
 	+ "<ul><li>Career Launchers: early career professionals wanting to start a career in a high-growth field and gain exposure to the full development lifecycle as the launch point.</li>"
 	+ "<li>Career Builders: professionals ready to build on existing skills in coding, to formalize training, and earn a valued certificate.</li>"
 	+ "<li>Career Switchers: mid- or later career professionals looking to switch into software development from another field, such as marketing, sales, operations, or any other field.</li></ul>";
+
+	setButtonActive('course');
 }
 
 function show_week_07() {
@@ -39,13 +51,15 @@ function show_week_07() {
 	+ "<h3>GitHub Repositories</h3>"
 	+ "<p>Name: <a href='https://github.com/deanqtran/PacMen-On-Fly.git' target='_blank'>PacMen On Fly</a><br/><br/>"
 	+"<pre>https://github.com/deanqtran/PacManCounterClockWiseMovement.git</pre></p>";
+
+	setButtonActive('week07');
 }
 
 function show_week_08() {
 	var nav = document.getElementById("navbar");
 	nav.innerHTML = "<p><a href='index.html'>Home</a>&nbsp;&nbsp;"
 	+">&nbsp;&nbsp;<a id='courselink' href='javascript:about_mit_xpro_course();'>About MIT-xPRO Course</a>&nbsp;&nbsp;"
-	+">&nbsp;&nbsp;<a id='week07link' href='javascript:show_week_08();'>Week 08: Eye Exercise</a></p>";
+	+">&nbsp;&nbsp;<a id='week08link' href='javascript:show_week_08();'>Week 08: Eye Exercise</a></p>";
 	
 	var div = document.getElementById("content");
 	div.innerHTML = "<h2>MIT-xPro Course Week 08 Exercise</h2><br/>"
@@ -66,13 +80,15 @@ function show_week_08() {
 	+ "<h3>GitHub Repository</h3>"
 	+ "<p>Name: <a href='https://github.com/deanqtran/EyePairMovement.git' target='_blank'>EyePairMovement</a><br/><br/>"
 	+"<pre>https://github.com/deanqtran/EyePairMovement.git</pre></p>";
+
+	setButtonActive('week08');
 }
 
 function show_week_09() {
 	var nav = document.getElementById("navbar");
 	nav.innerHTML = "<p><a href='index.html'>Home</a>&nbsp;&nbsp;"
 	+">&nbsp;&nbsp;<a id='courselink' href='javascript:about_mit_xpro_course();'>About MIT-xPRO Course</a>&nbsp;&nbsp;"
-	+">&nbsp;&nbsp;<a id='week07link' href='javascript:show_week_08();'>Week 09: Real Time Bus Tracker Exercise</a></p>";
+	+">&nbsp;&nbsp;<a id='week09link' href='javascript:show_week_09();'>Week 09: Real Time Bus Tracker Exercise</a></p>";
 	
 	var div = document.getElementById("content");
 	div.innerHTML = "<h2>MIT-xPro Course Week 09 Exercise</h2><br/>"
@@ -91,4 +107,22 @@ function show_week_09() {
 	+ "<h3>GitHub Repository</h3>"
 	+ "<p>Name: <a href='https://github.com/deanqtran/Real-Time-Bus-Tracker.git' target='_blank'>Real-Time-Bus-Tracker</a><br/><br/>"
 	+"<pre>https://github.com/deanqtran/Real-Time-Bus-Tracker.git</pre></p>";
+	
+	setButtonActive('week09');
+}
+function repositories() {
+	var nav = document.getElementById("navbar");
+	nav.innerHTML = "<p><a href='index.html'>Home</a>&nbsp;&nbsp;"
+	+">&nbsp;&nbsp;<a id='repositorieslink' href='javascript:repositories();'>GitHub Repositories</a></p>";
+
+	var div = document.getElementById("content");
+	div.innerHTML = "<h2>https://deanqtran.github.io Repositories</h2><br/>"
+	+ "<ul><li><p>Name: <a href='https://github.com/deanqtran/EyePairMovement.git' target='_blank'>EyePairMovement</a><br/><br/>"
+	+"https://github.com/deanqtran/EyePairMovement.git</p></li>"
+	+ "<li><p>Name: <a href='https://github.com/deanqtran/EyePairMovement.git' target='_blank'>EyePairMovement</a><br/><br/>"
+	+"https://github.com/deanqtran/EyePairMovement.git</p></li>"
+	+ "<li><p>Name: <a href='https://github.com/deanqtran/Real-Time-Bus-Tracker.git' target='_blank'>Real-Time-Bus-Tracker</a><br/><br/>"
+	+"https://github.com/deanqtran/Real-Time-Bus-Tracker.git</p></li></ul>";
+
+	setButtonActive('repositories');
 }
