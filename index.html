@@ -9,61 +9,100 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="./js/show_content.js"></script>
     <title>Dean Q. Tran's Portfolio</title>
 </head>
 <body>
     <div class="container">
-        <img src="./images/Dean.jpg" alt="Dean Picture">
+        <img class="img_logo" src="./images/Dean.jpg" alt="Dean Picture">
         <h1 class="header-text">Dean Q. Tran's Portfolio</h1>
     </div>
     <div class="wrapper">
-        <div class="one header-text"></div>
-        <div class="two header-text" id="navbar"><a href="index.html">Home</a>
+        <div class="one header-text">
+            <a href="index.html"><img src="./images/home.png" alt="Home" width="40" height="40"></a>
         </div>
-        <div class="three">
+        <div class="two header-text container-fluid">
+            <div id="navbar">
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+            <div id="navbar_search" style="position: absolute; right: 20px;">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><input id="site-search" class="form-control me-2" type="search" placeholder="Search the site..." aria-label="Search through site concent"></td>
+                            <td><button class="btn btn-outline-success" type="submit" onclick="search()">Search</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="three_btrap_bg">
             <ul style="list-style-type:none; margin-left: -20px; ">
                 <li><button id="home" class="btn btn-primary active" style="font-size: 1.2em" onclick="parent.location='index.html'">
                     Home</button></li>
-                <li><button id="course" class="btn btn-primary" style="font-size: 1.2em" onclick="about_mit_xpro_course()">
+                <li><button id="course" class="btn btn-secondary" style="font-size: 1.2em" onclick="about_mit_xpro_course()">
                     MIT-xPro Course Information</button></li>
                     <ul>
-                        <li><button id="week07" class="btn btn-primary" style="font-size: 1em" onclick="show_week_07()">
+                        <li><button id="week07" class="btn btn-secondary" style="font-size: 1em" onclick="show_week_07()">
                             Week 07: PacMen Exercise</button></li>
-                        <li><button id="week08" class="btn btn-primary" style="font-size: 1em" onclick="show_week_08()">
+                        <li><button id="week08" class="btn btn-secondary" style="font-size: 1em" onclick="show_week_08()">
                             Week 08: Eye Exercise</button></li>
-                        <li><button id="week09" class="btn btn-primary" style="font-size: 1em" onclick="show_week_09()">
+                        <li><button id="week09" class="btn btn-secondary" style="font-size: 1em" onclick="show_week_09()">
                             Week 09: Real Time Bus Tracker Exercise</button></li>
                     </ul>
-                <li><button id="repositories" class="btn btn-primary" style="font-size: 1.2em" onclick="repositories()">
+                <li><button id="repositories" class="btn btn-secondary" style="font-size: 1.2em" onclick="repositories()">
                         GitHub Repositories</button></li>
             </ul>
         </div>
 
         <div class="four">
-            <div id="content">
-                <h2>About me:</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZTW1hfj5Bf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p><a href="https://www.youtube.com/watch?v=ZTW1hfj5Bf4" target="_blank">click here to watch on new tab browser window</a></p>
-                <p2>Or go to website:</p2><pre>https://www.youtube.com/watch?v=ZTW1hfj5Bf4</pre>
-                <br/>
-                <h3>Profession</h3>
-                <p>I graduated from Texas A&amp;M University, College Station, TX with BSEE degree in 1993.  Over years of my career, I had learned various software, database, and network skills.</p><br/>
-                <h3>Current Learning</h3>
-                <p>Taking a MIT | xPRO Course: <a href='https://xpro.mit.edu/programs/program-v1:xPRO+PCCx+R1/' target='_blank'>Professional Certificate in Coding: Full Stack Development with MERN</a></p>
-                <p>Course: December 2021</p><br/>
-                <h3>Hobbies</h3>
-                <ul>
-                    <li>Believe or not one of my hobbies is to learn new software skills</li>
-                    <li>Maintain and repair automobiles, house appliances</li>
-                    <li>Build decks, patios</li>
-                    <li>Listen YouTube music</li>
-                </ul>
+            <div id="content" class="p-3 mb-2 bg-body text-dark">
+                <div class="card">
+                    <div class="card-header"><h2>About me:</h2></div>
+                    <div class="card-body">
+                        <iframe width="280" height="157" src="https://www.youtube.com/embed/ZTW1hfj5Bf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p><a href="https://www.youtube.com/watch?v=ZTW1hfj5Bf4" target="_blank">click here to watch on new tab browser window</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><h3>Profession</h3></div>
+                    <div class="card-body">
+                        <p>I graduated from Texas A&amp;M University, College Station, TX with a Bachelor's degree in Electrical Engineering degree in 1993.  Over the years, I have learned various software, database, and network skills.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><h3>Current Learning</h3></div>
+                    <div class="card-body">
+                        <p>Taking MIT | xPRO Course: <a href='https://xpro.mit.edu/programs/program-v1:xPRO+PCCx+R1/' target='_blank'>Professional Certificate in Coding: Full Stack Development with MERN</a></p>
+                        <p>Course: December 2021</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><h3>Hobbies</h3></div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Believe it or not, one of my hobbies is to learn new software skills</li>
+                            <li>Maintain and repair automobiles and house appliances</li>
+                            <li>Build decks and patios</li>
+                            <li>Listen to music on YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><h3>Contact Information</h3></div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Cell Phone:&nbsp;(703) 618-5962<a href='tel:(703) 618-5962'>&#x260E;</a></li>
+                            <li>Email:&nbsp;dean.quoc.tran@gmail.com<a href='mailto:dean.quoc.tran@gmail.com'>&#x2709;</a></li>
+                            <li>LinkedIn: https://linkedin.com/in/dean-quoc-tran<a href='https://linkedin.com/in/dean-quoc-tran' target='_blank'><img src="./images/linkedIn.png" width="60" height="35"></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="five"><p class="footer">Updated: 2022-MAR-23</p></div>
+        <div class="five"><p class="footer">Updated: 2022-APR-01</p></div>
     </div>
     
 </body>
