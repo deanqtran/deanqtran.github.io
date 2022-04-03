@@ -8,19 +8,27 @@ ___
 </ul>  
 
 ### **Installation**:
-<ul><li>TBD.</li></ul>
+<ul><li>None</li></ul>
 
 ### **Usage**:
-<ul><li>TBD.</li></ul>
+<p>Current <b>Dean Q. Tran's Portfolio</b> website are using:</p>
+<ul>
+  <li>BootStrap 4.0.0</li>
+  <li>fonts/proxima-nova-web-fonts-master/fonts/fonts.css</li>
+</ul>
 
 ### **Support**:
-<ul><li>TBD.</li></ul>
+<ul><li>None</li></ul>
 
 ### **Roadmap**:
-<ul><li>TBD.</li></ul>
+<p>This website will be integrated / expanded with new learned knowledge from the course lectures and videos.</p>
 
 ### **License information**:
 <ul>
   <li>Some provided materials from the lecture videos and from assignment solutions are used in this project</li>
-  <li>Some implementations are derived from the provided materials of the course.</li>
+  <li>Some implementations are derived from the provided materials of the course:
+    <ul>
+      <li>fonts/proxima-nova-web-fonts-master/fonts/fonts.css</li>
+    </ul>
+  </li>
 </ul>
