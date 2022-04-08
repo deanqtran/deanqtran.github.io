@@ -1,5 +1,5 @@
 # deanqtran.github.io project
-___
+
 ### **Description**:
 <ul>
   <li>Course: MIT xPRO Professional Certificate in Coding: Full Stack Development with MERN</li>
@@ -32,3 +32,6 @@ ___
     </ul>
   </li>
 </ul>
+
+------------------
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=deanqtran&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true" />
